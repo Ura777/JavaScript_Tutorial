@@ -1,0 +1,1 @@
+alert("外部JavaScript程式檔案");
