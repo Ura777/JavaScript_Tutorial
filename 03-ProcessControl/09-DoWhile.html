@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--do while-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>do while</title>
+    </head>
+    <body>
+        <script>
+            var sum = 0, i=10;
+
+            //while的後面要記得加上分號
+            do{
+                document.write("整數：" + i + "<br>");
+                sum+=i;
+
+                //i+=10絕對不能忘記寫上去，不然會無法脫離迴圈。
+                i+=10;
+            }while(i<=100);
+
+            document.write("<hr>總和：" + sum + "<br>");
+        </script>
+    </body>
+</html>

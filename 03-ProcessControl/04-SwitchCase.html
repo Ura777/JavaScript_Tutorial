@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--switch case-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>switch case</title>
+        <script>
+            var intScore = 0;
+        </script>
+    </head>
+    <body>
+        國文成績 = <script>document.write(intScore);</script><br>
+        <hr>
+        成績判斷為
+        <script>
+            switch(intScore)
+            {
+                case 100:
+                case 90:
+                case 80:
+                    document.write("很棒");
+                    break;
+                case 70:
+                case 60:
+                    document.write("及格");
+                    break;
+                case 50:
+                case 40:
+                    document.write("不及格");
+                    break;
+                case 30:
+                case 20:
+                case 10: 
+                case 0: 
+                    document.write("需要補考");
+                    break;
+                default:
+                    document.write("成績錯誤");
+            }
+        </script>
+    </body>
+</html>

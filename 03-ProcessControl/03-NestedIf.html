@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--巢狀if-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>巢狀if</title>
+        <script>
+            var intScore = 39;
+        </script>
+    </head>
+    <body>
+        國文成績 = <script>document.write(intScore);</script><br>
+        <hr>
+        成績判斷為
+        <script>
+            if(intScore>=60)
+            {
+                if(intScore>=80)
+                {
+                    document.write("很棒");
+                }
+                else
+                {
+                    document.write("及格");
+                }
+            }
+            else
+            {
+                if(intScore>=40)
+                {
+                    document.write("不及格");
+                }
+                else
+                {
+                    document.write("需要補考");
+                }
+            }
+        </script>
+    </body>
+</html>

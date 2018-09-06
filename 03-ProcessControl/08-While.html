@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!--while-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>while</title>
+    </head>
+    <body>
+        <script>
+            var sum = 0, i=1;
+            while(i<=10)
+            {
+                document.write("整數：" + i + "<br>");
+                sum+=i;
+
+                //i++絕對不能忘記寫上去，不然會無法脫離迴圈。
+                i++;
+            }
+            document.write("<hr>總和：" + sum + "<br>");
+        </script>
+    </body>
+</html>
