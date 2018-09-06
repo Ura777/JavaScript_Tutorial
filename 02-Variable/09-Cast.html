@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!--資料型態的轉換-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>資料型態的轉換</title>
+    </head>
+    <body>
+        字串"3 pages"轉換成Integer後 = <script>document.write(parseInt("3 pages"));</script><br>
+        小數2.3轉換成Integer後 = <script>document.write(parseInt(2.3));</script><br>
+        <hr>
+        字串"3.2 cents"轉換成Integer後 = <script>document.write(parseFloat("3.2 cents"));</script><br>
+        字串"你好"轉換成Integer後 = <script>document.write(parseFloat("你好"));</script><br>
+        <hr>
+        <!--eval()會將運算式的字串參數當作運算式，可以傳回運算式的計算結果。-->
+        eval("20+4*5") = <script>document.write(eval("20+4*5"));</script><br>
+        eval("10>20") = <script>document.write(eval("10>20"));</script><br>
+        <hr>
+        <!--typeof()可以取得變數的資料型態-->
+        typeof(a) = <script>document.write(typeof(a));</script><br>
+    </body>
+</html>

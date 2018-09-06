@@ -6,6 +6,7 @@
 * [課程介紹](https://github.com/Ura777/JavaScript_Tutorial#%E8%AA%B2%E7%A8%8B%E4%BB%8B%E7%B4%B9)
   * [Ch00 - Tomcat的管理](https://github.com/Ura777/JavaScript_Tutorial#ch00---tomcat%E7%9A%84%E7%AE%A1%E7%90%86)
   * [Ch01 - 基礎的JavaScript](https://github.com/Ura777/JavaScript_Tutorial#ch01---%E5%9F%BA%E7%A4%8E%E7%9A%84javascript)
+  * [Ch02 - 變數、資料型態、運算元、運算子]()
 * * *
 ## 環境設置
 * 作業系統 = Windows 7
@@ -100,5 +101,43 @@
 * 第1個JavaScript程式
   * Hello World
 * * *
+## Ch02 - 變數、資料型態、運算元、運算子
+* 變數的宣告
+* 判斷變數是否存在
+* 數值的資料型態
+  * 整數
+  * 浮點數
+* 字串的資料型態
+  * 不支援單一字元的函數，例如chr()。
+* 其他資料型態
+  * 布林
+  * Null
+  * Undefined
+* 跳脫字元
+  * 使用反斜線「\」
+* 運算子的優先順序
+* 遞增與遞減運算子
+* 比較運算子
+* 邏輯運算子
+* 位元運算子
+  * Not運算：~
+  * 左移運算：&lt;&lt;
+  * 右移運算：&gt;&gt;
+  * 無符號右移：&gt;&gt;&gt;
+  * And運算：&amp;
+  * Xor運算：^
+  * Or運算：|
+* 指定運算子
+  * x+=y相當於x=x+y
+* 資料型態的轉換
+  * 會自動進行強制轉換
+  * 轉換成整數：parseInt()
+  * 轉換成浮點數：parseFloat()
+* eval()
+  * 將運算式的字串參數當作運算式，可以傳回運算式的計算結果。
+* typeof()
+  * 可以取得變數的資料型態
+* * *
+
 
 

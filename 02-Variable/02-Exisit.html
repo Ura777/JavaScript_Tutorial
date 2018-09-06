@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--變數是否存在-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>變數是否存在</title>
+        <script>
+            var strName = "Allen";
+            var intAge = 22;
+            var blnMarried = false;
+        </script>
+    </head>
+    <body>
+        姓名：<script>document.write(strName);</script><br>
+        年齡：<script>document.write(intAge);</script><br>
+        婚姻狀態：
+        <script>
+            if (blnMarried)
+            {
+                document.write("已婚");
+            }
+            else
+            {
+                document.write("未婚");
+            }
+        </script><br>
+        性別：
+        <script>
+            if (window.strSex)
+            {
+                document.write(strSex);
+            }
+            else
+            {
+                document.write("尚未填寫");
+            }
+        </script><br>
+    </body>
+</html>
