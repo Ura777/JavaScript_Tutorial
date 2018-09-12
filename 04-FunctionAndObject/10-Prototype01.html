@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--新增原型物件屬性-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>新增原型物件屬性</title>
+        <script>
+            //建構元
+            function circle(r, color){
+                this.r = r;
+                this.color = color;
+                this.display = showCircle;
+            }
+
+            //印出來的Function
+            function showCircle(){
+                document.write("半徑：" + this.r + "<br>");
+                document.write("顏色：" + this.color + "<br>");
+                document.write("圓周率：" + this.PI + "<br><hr>");
+            }
+            
+        </script>
+    </head>
+    <body>
+        <h2>印出objCircle物件內所有的屬性值</h2>
+        <hr>
+        <script>
+            //產生物件
+            var objCircle01 = new circle(2, "Red");
+            var objCircle02 = new circle(3, "Green");
+            //新增Prototype物件的屬性
+            circle.prototype.PI = 3.1415926;
+
+            //印出來
+            objCircle01.display();
+            objCircle02.display();
+        </script>
+    </body>
+</html>

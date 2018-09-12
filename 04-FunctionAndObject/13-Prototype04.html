@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--原型物件的繼承-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>擴充JavaScript內建物件</title>
+        <script>
+            //父類別
+            function position(x, y, color){
+                this.x = x;
+                this.y = y;
+                this.color = color;
+            }
+
+            //子類別
+            function circle(r){
+                this.r = r;
+                this.info = showCircleInfo;
+            }
+
+            //子類別Function
+            function showCircleInfo(){
+                document.write("半徑：" + this.r + "<br>");
+                document.write("X軸座標：" + this.x + "<br>");
+                document.write("Y軸座標：" + this.y + "<br>");
+                document.write("顏色：" + this.color + "<br>");
+                document.write("圓面積：" + (Math.pow(this.r, 2) * 3.1415926) + "<hr>");
+            }
+        </script>
+    </head>
+    <body>
+        <h2>擴充JavaScript內建物件</h2>
+        <hr>
+        <script>
+            //繼承
+            circle.prototype = new position(10, 20, "Red");
+
+            //產生circle物件
+            var myCircle = new circle(7);
+
+            //印出來
+            myCircle.info();
+        </script>
+    </body>
+</html>

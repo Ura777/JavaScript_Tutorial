@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--增加新的物件函數-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>增加新的物件函數</title>
+        <script>
+            //建構元
+            function nameCard(name, age, phone, email){
+                this.name = name;
+                this.age = age;
+                this.phone = phone
+                this.email = email;
+                this.print = printCard;
+            }
+
+            //印出來的Function
+            function printCard(){
+                document.write("姓名：" + this.name + "<br>");
+                document.write("年齡：" + this.age + "<br>");
+                document.write("電話：" + this.phone + "<br>");
+                document.write("電子信箱：" + this.email + "<br>");
+            }
+            
+        </script>
+    </head>
+    <body>
+        <h2>印出objCard物件內所有的屬性值</h2>
+        <hr>
+        <script>
+            //產生物件
+            var objCard = new nameCard("Allen", 22, "0912345678", "allen07@test.js.temp");
+            //印出來
+            //這裡是要指名屬性名稱print，而不是印出來的Function名稱printCard。
+            objCard.print();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--物件的階層架構-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>物件的階層架構</title>
+        <script>
+            //nameCard建構元
+            function nameCard(name, age, phone, email){
+                this.name = name;
+                this.age = age;
+                //物件的屬性值可以是另外1個物件
+                this.phone = new phoneList(phone, "N/A");
+                this.email = email;
+            }
+
+            //phoneList建構元
+            function phoneList(homephone, cellphone){
+                this.homephone = homephone;
+                this.cellphone = cellphone;
+            }
+        </script>
+    </head>
+    <body>
+        <h2>印出objCard物件內所有的屬性值</h2>
+        <hr>
+        <script>
+            //產生物件
+            var objCard = new nameCard("Jennifer", 24, "09333333336", "jennifer28@test.js.temp");
+            //印出來
+            document.write(objCard.name + "<br>");
+            document.write(objCard.age  + "<br>");
+            document.write(objCard.phone.homephone  + "<br>");
+            document.write(objCard.phone.cellphone  + "<br>");
+            document.write(objCard.email  + "<br>");
+        </script>
+    </body>
+</html>

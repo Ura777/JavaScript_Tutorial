@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--自定物件02-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>自定物件02</title>
+        <script>          
+            //產生物件
+            var objCard = {
+                //定義屬性名稱與值
+                name: "Ivan",
+                age: 23,
+                phone: "0987654321",
+                email: "Ivan10@test.js.temp",
+            }
+        </script>
+    </head>
+    <body>
+        <h2>印出objCard物件內所有的屬性值</h2>
+        <hr>
+        <script>
+            for (property in objCard){
+                document.write(objCard[property] + "<br>");
+            }
+        </script>
+    </body>
+</html>

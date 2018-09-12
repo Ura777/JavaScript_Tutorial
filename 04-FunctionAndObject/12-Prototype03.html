@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--擴充JavaScript內建物件-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>擴充JavaScript內建物件</title>
+        <script>
+            //反轉字串
+            function reverse_string(){
+                for(i=this.length-1; i>=0; i--){
+                    document.write(this.charAt(i));
+                }
+                document.write("<br>");
+            }
+
+            //只取基數位置的文字
+            function even_string(){
+                var output="";
+                for(i=0; i<this.length; i+=2){
+                    output+=this.charAt(i);
+                }
+                return output;
+            }
+
+            //擴充物件的方法
+            String.prototype.reverse = reverse_string;
+            String.prototype.even = even_string;
+        </script>
+    </head>
+    <body>
+        <h2>擴充JavaScript內建物件</h2>
+        <hr>
+        <script>
+            //產生物件
+            var objMessage = new String("JavaScript網頁程式設計");
+            document.write("原始字串 = " + objMessage + "<br>");
+            //印出來
+            objMessage.reverse();
+            document.write(objMessage.even() + "<hr>");            
+        </script>
+    </body>
+</html>

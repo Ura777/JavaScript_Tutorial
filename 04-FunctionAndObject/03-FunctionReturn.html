@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--Function的回傳-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Function的回傳</title>
+        <script>
+            //自訂有回傳的Function
+            function sumToN(intNumber){
+                var sum=0;
+                for(i=1; i<=intNumber; i++)
+                {
+                    sum+=i;
+                }
+                return sum;
+            }
+        </script>
+    </head>
+    <body>
+        <h2>使用Function印出1+2+3+...+8+9+10的結果</h2>
+        <hr>
+        <script>
+            //Function
+            document.write("Answer = " + sumToN(10));
+        </script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--constructor-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>constructor</title>
+        <script>
+            //建構元
+            function nameCard(name, age, phone, email){
+                this.name = name;
+                this.age = age;
+                this.phone = phone;
+                this.email = email;
+            }
+        </script>
+    </head>
+    <body>
+        <h2>印出objCard物件內所有的屬性值</h2>
+        <hr>
+        <script>
+            //產生物件
+            var objCard = new nameCard("Christina", 23, "0922222222", "christina30@test.js.temp");
+            //印出來
+            for (property in objCard){
+                document.write(objCard[property] + "<br>");
+            }
+        </script>
+    </body>
+</html>

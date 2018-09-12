@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--with-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>with</title>
+        <script>          
+            //產生物件
+            var objCard = new Object();
+            with(objCard){
+                //定義屬性名稱與值
+                name = "Ura";
+                age = 24;
+                phone = "0911111111";
+                email = "Ura20@test.js.temp";
+            }
+        </script>
+    </head>
+    <body>
+        <h2>印出objCard物件內所有的屬性值</h2>
+        <hr>
+        <script>
+            document.write(name + "<br>");
+            document.write(age  + "<br>");
+            document.write(phone  + "<br>");
+            document.write(email  + "<br>");
+        </script>
+    </body>
+</html>
