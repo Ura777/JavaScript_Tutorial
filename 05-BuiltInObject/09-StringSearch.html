@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--字串搜尋-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>字串搜尋</title>
+    </head>
+    <body>
+        <h2>字串搜尋</h2>
+        <hr>
+        <script>
+            var text = "今天的天氣很好";
+            //印出來
+            document.write("text：" + text + "<hr>");
+            document.write('text.indexOf("很好", 2) = ' + text.indexOf("很好", 2) + "<hr>");
+            document.write('text.lastIndexOf("今天") = ' + text.lastIndexOf("今天") + "<hr>");
+
+            //若有找到，傳回的為找到的字串。
+            //若沒有找到，傳回null。
+            document.write('text.match("天氣") = ' + text.match("天氣") + "<hr>");
+
+            document.write('text.search("的") = ' + text.search("的") + "<hr>");
+        </script>
+    </body>
+</html>

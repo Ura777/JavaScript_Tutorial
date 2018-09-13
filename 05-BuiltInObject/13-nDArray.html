@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--多維陣列-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>多維陣列</title>
+    </head>
+    <body>
+        <h2>多維陣列</h2>
+        <hr>
+        會員姓名與編號如下：<hr>
+        <script>
+            //建立2維物件
+            var userInfo = new Array(5);
+            for(i=0; i<5; i++)
+            {
+                userInfo[i] = new Array(2);
+            }
+
+            //指定陣列內的元素值
+            userInfo[0][0] = "Allen";
+            userInfo[0][1] = "07";
+            userInfo[1][0] = "Ivan";
+            userInfo[1][1] = "10";
+            userInfo[2][0] = "Ura";
+            userInfo[2][1] = "20";
+            userInfo[3][0] = "Jennifer";
+            userInfo[3][1] = "28";
+            userInfo[4][0] = "Christina";
+            userInfo[4][1] = "30";
+
+            //印出來
+            for(i=0; i<userInfo.length; i++){
+                for(j=0; j<userInfo[i].length; j++)
+                {
+                    document.write(userInfo[i][j] + " ");
+                }
+                document.write("<hr>");
+            }
+        </script>
+    </body>
+</html>

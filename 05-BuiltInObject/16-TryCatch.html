@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- try-catch -->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>try-catch</title>
+    </head>
+    <body>
+        <h2>try-catch</h2>
+        <hr>
+        <script>
+            var x = 10;
+
+            try{
+                //測試的錯誤程式碼
+                x=y;
+            }
+            catch (e){
+                //例外處理的程式碼
+                document.write("錯誤代碼(number)：" + (e.number & 0xFFFF) + "<br>");
+                document.write("錯誤說明(message)：" + e.message + "<br>");
+                document.write("錯誤說明(description)：" + e.description + "<br>");
+            }
+            finally{
+                //顯示x的值
+                document.write("<hr>測試值 = " + x + "<hr>");
+            }
+        </script>
+    </body>
+</html>

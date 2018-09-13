@@ -9,6 +9,7 @@
   * [Ch02 - 變數、資料型態、運算元、運算子](https://github.com/Ura777/JavaScript_Tutorial#ch02---%E8%AE%8A%E6%95%B8%E8%B3%87%E6%96%99%E5%9E%8B%E6%85%8B%E9%81%8B%E7%AE%97%E5%85%83%E9%81%8B%E7%AE%97%E5%AD%90)
   * [Ch03 - 流程控制](https://github.com/Ura777/JavaScript_Tutorial#ch03---%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6)
   * [Ch04 - 函數與物件](https://github.com/Ura777/JavaScript_Tutorial#ch04---%E5%87%BD%E6%95%B8%E8%88%87%E7%89%A9%E4%BB%B6)
+  * [Ch05 - 內建物件]()
 * * *
 ## 環境設置
 * 作業系統 = Windows 7
@@ -172,5 +173,61 @@
 * 擴充JavaScript內建物件
 * Prototype物件的繼承
 * * *
+## Ch05 - 內建物件
+* 物件種類
+  * 隱性物件
+  * 顯性物件
+* Boolean物件
+* Function物件
+* Number物件
+* String物件
+  * 回傳Html標籤
+  * 屬性length
+  * toUpperCase()
+  * toLowerCase()
+  * indexOf()
+  * lastIndexOf()
+  * match()
+  * search()
+  * replace()
+  * split()
+  * substr()
+  * substring()
+  * concat()
+* Array物件
+  * 1維陣列
+  * 多維陣列
+  * 走訪方式
+  * 屬性length
+  * join()
+  * concat()
+  * reverse()
+  * sort()
+* Date物件
+  * getTimezoneOffset()
+  * toUTCString()
+  * toLocaleString()
+  * Date.parse()
+  * Date.UTC()
+* Math物件
+  * 四捨五入：round()
+  * 亂數：random()
+* Global物件
+  * 不能使用new來建立
+  * 腳本語言引擎初始化後就會自動建立
+  * 直接使用的屬性名稱
+    * Infinity
+    * NaN
+* 例外處理
+  * try-catch-finally
+  * finally視情況而寫
+* 內建物件的共用屬性
+  * constructor
+  * Global與Math物件不支援
+* 內建物件的共用函數
+  * toString()
+  * valueOf()
+* * *
+
 
 

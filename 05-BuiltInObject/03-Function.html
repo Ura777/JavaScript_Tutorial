@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<!--Function物件-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Function物件</title>
+    </head>
+    <body>
+        <h2>Function物件</h2>
+        <hr>
+        <script>
+            //產生物件
+            var mod = new Function("x", "y", "return x%y");
+            //印出來
+            document.write("10除以20的餘數 = " + mod(10, 20) + "<br>");
+        </script>
+    </body>
+</html>

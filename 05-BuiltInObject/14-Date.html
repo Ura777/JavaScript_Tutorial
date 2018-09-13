@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!--Date物件-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Date物件</title>
+    </head>
+    <body>
+        <h2>Date物件</h2>
+        <h2>GMT為格林威治標準時間</h2>
+        <hr>
+        <script>
+            var myDate = new Date();
+            document.write("本地時間和GMT的時間差 = " + myDate.getTimezoneOffset() + "分鐘<hr>");
+            //toGMTString()已經被移除，目前是使用toUTCString()。
+            document.write("GMT時間 = " + myDate.toUTCString() + "<hr>");
+
+            document.write("本地時間(從GMT轉換) = " + myDate.toLocaleString() + "<hr>");
+            document.write("從1/1/1970到本地時間的毫秒數 = " + Date.parse(myDate) + "毫秒<hr>");
+            document.write("從1/1/1970到GMT時間的毫秒數 = " + Date.UTC(2018, 09, 13, 12, 0, 0, 0) + "毫秒<hr>");
+        </script>
+    </body>
+</html>

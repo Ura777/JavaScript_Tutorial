@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!--子字串的處理-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>子字串的處理</title>
+    </head>
+    <body>
+        <h2>子字串的處理</h2>
+        <hr>
+        <script>
+            var text = "今天的天氣很好";
+            //印出來
+            document.write("text：" + text + "<hr>");
+            document.write('text.replace("天氣", "心情") = ' + text.replace("天氣", "心情") + "<hr>");
+            document.write('text.split("的") = ' + text.split("的") + "<hr>");
+            document.write('text.substr(3, 4) = ' + text.substr(3, 4) + "<hr>");
+            document.write('text.substring(3, 7) = ' + text.substring(3, 7) + "<hr>");
+            document.write('text.concat("，你說是不是呢？") = ' + text.concat("，你說是不是呢？") + "<hr>");
+            document.write("最後text的內容：" + text + "<hr>");
+        </script>
+    </body>
+</html>

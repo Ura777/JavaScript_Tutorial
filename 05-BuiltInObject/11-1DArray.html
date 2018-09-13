@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--1維陣列-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>1維陣列</title>
+    </head>
+    <body>
+        <h2>1維陣列</h2>
+        <hr>
+        <script>
+            //第1種建立方式
+            var userName = new Array(5);
+            userName[0] = "Allen";
+            userName[1] = "Ivan";
+            userName[2] = "Ura";
+            userName[3] = "Jennifer";
+            userName[4] = "Christina";
+            
+            //第2種建立方式
+            var userID = new Array(7,10,20,28,30);
+
+            //第1種走訪方式
+            for(i=0; i<userName.length; i++){
+                document.write("會員姓名：" + userName[i] + "<br>");
+            }
+            document.write("<hr>");
+
+            //第2種走訪方式
+            for(i in userID){
+                document.write("會員編號：" + userID[i] + "<br>");
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--陣列的屬性與方法-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>陣列的屬性與方法</title>
+    </head>
+    <script>
+        //第1種建立方式
+        var userName = new Array(5);
+        userName[0] = "Allen";
+        userName[1] = "Ivan";
+        userName[2] = "Ura";
+        userName[3] = "Jennifer";
+        userName[4] = "Christina";
+            
+        //第2種建立方式
+        var userID = new Array(7,10,20,28,30);
+
+        //印出來的Function
+        function showArray(array){
+            for(i in array){
+                document.write(array[i] + "<br>");
+            }
+            document.write("<hr>");
+        }
+    </script>
+    <body>
+        <h2>陣列的屬性與方法</h2>
+        <hr>
+        <script>
+            document.write("陣列userName的內容如下：<br>");
+            showArray(userName);
+            //印出userName的長度
+            document.write("陣列userName的長度 = " + userName.length + "<hr>");
+            document.write("userName.join() = " + userName.join() + "<hr>");
+            document.write('userName.join(" ") = ' + userName.join(" ") + "<hr>");
+
+            document.write("陣列userID的內容如下：<br>");
+            showArray(userID);
+            document.write("將陣列userName與userID合併後的內容如下：<br>");
+            showArray(userName.concat(userID));
+
+            document.write("將陣列userName反轉後的內容如下：<br>");
+            showArray(userName.reverse());
+
+            document.write("將陣列userName排序後的內容如下：<br>");
+            showArray(userName.sort());
+        </script>
+    </body>
+</html>
