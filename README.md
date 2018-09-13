@@ -9,7 +9,7 @@
   * [Ch02 - 變數、資料型態、運算元、運算子](https://github.com/Ura777/JavaScript_Tutorial#ch02---%E8%AE%8A%E6%95%B8%E8%B3%87%E6%96%99%E5%9E%8B%E6%85%8B%E9%81%8B%E7%AE%97%E5%85%83%E9%81%8B%E7%AE%97%E5%AD%90)
   * [Ch03 - 流程控制](https://github.com/Ura777/JavaScript_Tutorial#ch03---%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6)
   * [Ch04 - 函數與物件](https://github.com/Ura777/JavaScript_Tutorial#ch04---%E5%87%BD%E6%95%B8%E8%88%87%E7%89%A9%E4%BB%B6)
-  * [Ch05 - 內建物件]()
+  * [Ch05 - 內建物件](https://github.com/Ura777/JavaScript_Tutorial#ch05---%E5%85%A7%E5%BB%BA%E7%89%A9%E4%BB%B6)
 * * *
 ## 環境設置
 * 作業系統 = Windows 7
