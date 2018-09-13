@@ -10,6 +10,7 @@
   * [Ch03 - 流程控制](https://github.com/Ura777/JavaScript_Tutorial#ch03---%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6)
   * [Ch04 - 函數與物件](https://github.com/Ura777/JavaScript_Tutorial#ch04---%E5%87%BD%E6%95%B8%E8%88%87%E7%89%A9%E4%BB%B6)
   * [Ch05 - 內建物件](https://github.com/Ura777/JavaScript_Tutorial#ch05---%E5%85%A7%E5%BB%BA%E7%89%A9%E4%BB%B6)
+  * [Ch06 - DOM模型]()
 * * *
 ## 環境設置
 * 作業系統 = Windows 7
@@ -228,6 +229,46 @@
   * toString()
   * valueOf()
 * * *
-
+## Ch06 - DOM模型
+* Document Object Model
+* DOM組成部分
+  * DOM Core
+  * DOM HTML
+* 取得元素
+  * getElementById()
+  * getElementsByTagName()
+    * 會回傳NodeList物件
+* 取得指定的節點物件
+  * item()
+* 修改元素的內容
+  * 屬性innerHTML
+* 存取元素的尺寸與位置
+  * 屬性offsetLeft
+  * 屬性offsetTop
+  * 屬性offsetWidth
+  * 屬性offsetHeight
+  * 屬性offsetParent
+  * scrollIntoView()
+* 瀏覽父節點
+  * 屬性parentNode
+* 瀏覽兄弟節點
+  * 屬性previousSibling
+* 瀏覽子節點
+  * 屬性childNodes
+    * 會回傳NodeList物件
+* 存取標籤的屬性
+  * item(index).屬性名稱
+ 
+        例如：
+        var pArray = document.getElementsByTagName("p");
+        document.write("第1個段落的align屬性值：" + pArray.item(0).align);
+ 
+* 新增節點
+  * appendChild
+* 插入節點
+  * insertBefore()
+* 刪除節點
+  * removeChild()
+* * *
 
 

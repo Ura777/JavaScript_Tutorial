@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--存取元素的尺寸與位置-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>存取元素的尺寸與位置</title>
+        <script>
+            function showPosition(){
+                var p = document.getElementById("myP");
+                alert("left = " + p.offsetLeft + "\ntop = " + p.offsetTop);
+            }
+
+            function showSize(){
+                var p = document.getElementById("myP");
+                alert("Width = " + p.offsetWidth + "\nHeight = " + p.offsetHeight);
+            }
+
+            function showParent(){
+                var p = document.getElementById("myP");
+                alert("Parent = " + p.offsetParent.tagName);
+            }
+
+            function viewElement(){
+                var objElement = document.getElementsByTagName("p");
+                if(objElement.length > 4){
+                    objElement[3].scrollIntoView(true);
+                }
+            }
+        </script>
+    </head>
+    <body id="myBody">
+        <h2>存取元素的尺寸與位置</h2>
+        <hr>
+        <p id="myP">存取元素的尺寸與位置</p>
+        <form>
+            <input type="button" onclick="showPosition()" value="元素位置">
+            <input type="button" onclick="showSize()" value="元素大小">
+            <input type="button" onclick="showParent()" value="顯示父元素">
+            <input type="button" onclick="viewElement()" value="顯示段落">
+        </form>
+        <p>存取元素的尺寸與位置1</p>
+        <p>存取元素的尺寸與位置2</p>
+        <p>存取元素的尺寸與位置3</p>
+        <p>存取元素的尺寸與位置4</p>
+        <p>存取元素的尺寸與位置5</p>
+    </body>
+</html>

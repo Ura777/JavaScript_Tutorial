@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--瀏覽子節點-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>瀏覽子節點</title>
+    </head>
+    <body>
+        <h2>瀏覽子節點</h2>
+        <hr>
+        <p>測試項目清單如下：</p>
+        <ul id="myUL"><li id="myLi01">測試項目1</li><li id="myLi02">測試項目2</li><li id="myLi03">測試項目3</li></ul>
+        <hr>
+        <p>UL標籤的子節點名稱如下：</p>
+        <script>
+            var objUL = document.getElementById("myUL");
+            var objChilds = objUL.childNodes;
+            
+            //印出子節點名稱
+            for(i=0; i<objChilds.length; i++){
+                document.write(objChilds.item(i).nodeName + "<br>");
+            }
+        </script>
+    </body>
+</html>

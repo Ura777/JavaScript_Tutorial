@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!--修改元素的內容-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>修改元素的內容</title>
+        <script>
+            function changePContent(){
+                var p = document.getElementById("content");
+                p.innerHTML = "今天的天氣真好";
+            }
+        </script>
+    </head>
+    <body>
+        <h2>修改元素的內容</h2>
+        <hr>
+        <p id="content">Hello World!!!</p>
+        <input type="button" value="跟改內容" onclick="changePContent()">
+    </body>
+</html>

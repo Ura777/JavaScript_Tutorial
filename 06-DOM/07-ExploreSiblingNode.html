@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--瀏覽兄弟節點-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>瀏覽兄弟節點</title>
+    </head>
+    <body>
+        <h2>瀏覽兄弟節點</h2>
+        <hr>
+        <p>測試項目清單如下：</p>
+        <ul><li id="myLi01">測試項目1</li><li id="myLi02">測試項目2</li><li id="myLi03">測試項目3</li></ul>
+        <hr>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <script>
+            var x = document.getElementById("myLi02").previousSibling.innerHTML;
+            document.getElementById("demo1").innerHTML = "測試項目2前一個的兄弟節點：" + x;
+
+            var y = document.getElementById("myLi02").nextSibling.innerHTML;
+            document.getElementById("demo2").innerHTML = "測試項目2後一個的兄弟節點：" + y;
+        </script>
+    </body>
+</html>

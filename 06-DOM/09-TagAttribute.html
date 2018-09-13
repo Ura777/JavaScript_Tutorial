@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!--存取標籤的屬性-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>存取標籤的屬性</title>
+    </head>
+    <body>
+        <h2>存取標籤的屬性</h2>
+        <hr>
+        <p align="center">▇▇常見的候鳥資料如下：</p>
+        <p>黑面琵鷺</p>
+        <p>黑面琵鷺最早的棲息地是▇▇及▇▇的▇▇▇▇，但近年來他們覓著了一個新的棲息地，那就是▇▇▇▇的▇▇▇▇▇▇。</p>
+        <p>赤腹鷹</p>
+        <p>赤腹鷹的棲息地在▇▇、▇▇一帶，只要一到每年的▇、▇月，赤腹鷹就會成群結隊的到▇▇過冬，愛鷹的人士可千萬不能錯過。</p>
+        <hr>
+        <script>
+            //會回傳1個NodeList物件
+            var pArray = document.getElementsByTagName("p");
+            document.write("第1個段落的align屬性值：" + pArray.item(0).align);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--新增節點-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>新增節點</title>
+        <script>
+            function appendNode(){
+                var objNode = document.getElementById("myDiv");
+                var strText = "段落三";
+                var objNewNode = document.createElement("p");
+                var objTextNode = document.createTextNode(strText);
+                objNode.appendChild(objNewNode);
+                objNewNode.appendChild(objTextNode);
+            }
+        </script>
+    </head>
+    <body>
+        <h2>新增節點</h2>
+        <hr>
+        <div id="myDiv">
+            <p onclick="appendNode()">段落一，點我新增段落三。</p>
+            <p>段落二</p>
+        </div>
+    </body>
+</html>

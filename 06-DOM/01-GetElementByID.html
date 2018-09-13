@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--透過ID取得元素節點-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>透過ID取得元素節點</title>
+        <script>
+            //顯示<a>元素
+            function showAElement(){
+                var aTag = document.getElementById("google");
+                alert(aTag.nodeName + " - " + aTag.href);
+            }
+
+            //顯示<input>元素
+            function showButtonElement(){
+                var btn = document.getElementById("test");
+                alert(btn.tagName + " - " + btn.type);
+            }
+        </script>
+    </head>
+    <body>
+        <h2>使用ID屬性取得元素節點</h2>
+        <hr>
+        <p id="content">使用ID屬性取得元素節點</p>
+        <p>
+            <a id="google" href="https://www.google.com.tw/" target="_blank">Google</a>
+        </p>
+        <input id="test" type="button" onclick="showAElement()" value="選取&lt;a&gt;元素">
+        <input type="button" onclick="showButtonElement()" value="選取&lt;input&gt;元素">
+    </body>
+</html>

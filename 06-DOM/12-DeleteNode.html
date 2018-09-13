@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--刪除節點-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>刪除節點</title>
+        <script>
+            function deleteNode(){
+                var list = document.getElementById("myList");
+                //取得子節點個數
+                var childNodeCount = list.children.length;
+                //子節點的個數必須要大於0才能夠開始移除
+                if (childNodeCount!=0){
+                    for(i=0; i<=childNodeCount; i++)
+                    {
+                        list.removeChild(list.children[0]);
+                    }
+                }
+                else{
+                    alert("已經沒有子節點可以移除了！")
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h2>刪除節點</h2>
+        <hr>
+        <button onclick="deleteNode()">按此插入新的測試項目</button>
+        <p>測試項目清單如下：</p>
+        <ul id="myList">
+            <li>測試項目01</li>
+            <li>測試項目02</li>
+            <li>測試項目03</li>
+        </ul>
+    </body>
+</html>
