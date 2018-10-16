@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--畫出直線-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>畫出直線</title>
+        <script>
+            function drawLine(){
+                var canvas = document.getElementById("myCanvas");
+                if(canvas.getContext){
+                    var ctx = canvas.getContext("2d");
+                    ctx.strokeStyle = "#FF0066";
+                    //路徑開始
+                    ctx.beginPath();
+                    //線條起點移動至(50,50)
+                    ctx.moveTo(50,50);
+                    //線條終點移動至(100,50)
+                    ctx.lineTo(100,50)
+                    ctx.lineTo(150,100);
+                    ctx.lineTo(200,100);
+                    //畫出邊框
+                    ctx.stroke();
+                }
+            }
+        </script>
+        <style>
+            canvas{
+                border: 1px solid black;
+                width: 400px;
+                height: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="button" value="畫線" onclick="drawLine()"/>
+        <p></p>
+        <canvas id="myCanvas"></canvas>
+    </body>
+</html>

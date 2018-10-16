@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--漸層填色-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>漸層填色</title>
+        <script>
+            //繪製長方形
+            function drawLinearGradient(){
+                var canvas = document.getElementById("myCanvas");
+                if(canvas.getContext){
+                    var ctx = canvas.getContext("2d");
+                    /*
+                      建立LinearGradient物件
+                      參數為(漸層起點X軸座標,漸層起點Y軸座標,漸層終點X軸座標,漸層終點Y軸座標)
+                    */
+                    var grd = ctx.createLinearGradient(0, 0, 170, 0);
+                    /*
+                      加入漸層顏色
+                      參數為(offset, color)
+                    */
+                    grd.addColorStop(0, "red");
+                    grd.addColorStop(1, "orange");
+                    //將grd指定給fillStyle使用
+                    ctx.fillStyle=grd;
+                    //畫出長方形
+                    ctx.fillRect(20,20,150,100);
+                }
+            }
+        </script>
+        <style>
+            canvas{
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="button" value="畫出漸層長方形" onclick="drawLinearGradient()"/>
+        <p></p>
+        <canvas id="myCanvas"></canvas>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--線條的粗細與終端樣式-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>線條的粗細與終端樣式</title>
+        <script>
+            //繪製長方形
+            function drawLine(){
+                var canvas = document.getElementById("myCanvas");
+                if(canvas.getContext){
+                    var ctx = canvas.getContext("2d");
+                    ctx.strokeStyle = "#0000FF";
+                    //線條1
+                    //設定線條的粗細
+                    ctx.lineWidth = 10;
+                    ctx.beginPath();
+                    ctx.moveTo(50,50);
+                    ctx.lineTo(200,50);
+                    ctx.stroke();
+
+                    //線條2
+                    //設定線條終端樣式
+                    ctx.lineCap="round";
+                    ctx.beginPath();
+                    ctx.moveTo(50,70);
+                    ctx.lineTo(200,70);
+                    ctx.stroke();
+
+                    //線條3
+                    ctx.lineCap="square";
+                    ctx.beginPath();
+                    ctx.moveTo(50,90);
+                    ctx.lineTo(200,90);
+                    ctx.stroke();
+                }
+            }
+        </script>
+        <style>
+            canvas{
+                border: 1px solid black;
+                width: 400px;
+                height: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="button" value="畫線" onclick="drawLine()"/>
+        <p></p>
+        <canvas id="myCanvas"></canvas>
+    </body>
+</html>

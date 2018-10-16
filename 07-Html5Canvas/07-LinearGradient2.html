@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--線性漸層-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>線性漸層</title>
+        <script>
+            //繪製長方形
+            function drawLinearGradient(){
+                var canvas = document.getElementById("myCanvas");
+                if(canvas.getContext){
+                    var ctx = canvas.getContext("2d");
+                    var grd = ctx.createLinearGradient(0, 0, 170, 0);
+                    grd.addColorStop(0.2, "red");
+                    grd.addColorStop(0.3, "orange");
+                    grd.addColorStop(0.4, "yellow");
+                    grd.addColorStop(0.5, "green");
+                    grd.addColorStop(0.7, "blue");
+                    grd.addColorStop(0.8, "indigo");
+                    grd.addColorStop(1, "purple");
+                    ctx.fillStyle=grd;
+                    ctx.fillRect(20,20,150,100);
+                }
+            }
+        </script>
+        <style>
+            canvas{
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="button" value="畫出彩虹" onclick="drawLinearGradient()"/>
+        <p></p>
+        <canvas id="myCanvas"></canvas>
+    </body>
+</html>

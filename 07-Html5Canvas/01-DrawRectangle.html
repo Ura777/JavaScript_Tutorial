@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--畫出長方形-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>畫出長方形</title>
+        <script>
+            function draw(){
+                //透過ID取得Canvas元件
+                var canvas = document.getElementById("myCanvas");
+                if(canvas.getContext){
+                    //建立2D Context物件
+                    var ctx = canvas.getContext("2d");
+                    //指定圖形的顏色
+                    ctx.fillStyle = "#FF0000";
+                    //繪製矩形
+                    ctx.fillRect(0,0,150,75);
+
+                    ctx.fillStyle = "rgba(0,0,200,0.5)";
+                    ctx.fillRect(50,30,150,75);
+                }
+            }
+        </script>
+        <style>
+            /*Canvas的外框為黑色*/
+            canvas{
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body onload="draw()">
+        <!--Canvas-->
+        <canvas id="myCanvas"></canvas>
+    </body>
+</html>

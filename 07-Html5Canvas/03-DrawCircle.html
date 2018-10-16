@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--畫出圓形-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>畫出圓形</title>
+        <script>
+            function drawCircle(){
+                var canvas = document.getElementById("myCanvas");
+                if(canvas.getContext){
+                    var ctx = canvas.getContext("2d");
+                    ctx.beginPath();
+                    /*
+                      參數為(圓心X軸座標, 圓心Y軸座標, 半徑, 起始角度, 結束角度)
+                      角度必須轉換成弧度(Radians)
+                      弧度 = 角度*Math.PI/180
+                    */
+                    ctx.arc(100, 75, 50, 0, 2*Math.PI);
+                    //關閉路徑，這會讓頭尾都相連。
+                    ctx.closePath();
+                    ctx.stroke();
+                }
+            }
+        </script>
+        <style>
+            canvas{
+                border: 1px solid black;
+                width: 300px;
+                height: 150px;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="button" value="畫圓" onclick="drawCircle()"/>
+        <p></p>
+        <canvas id="myCanvas"></canvas>
+    </body>
+</html>

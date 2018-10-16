@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--清除圖形-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>清除圖形</title>
+        <script>
+            //繪製長方形
+            function drawRectangle(){
+                var canvas = document.getElementById("myCanvas");
+                if(canvas.getContext){
+                    var ctx = canvas.getContext("2d");
+                    ctx.fillStyle = "#FF0000";
+                    ctx.fillRect(30,30,150,75);
+                }
+            }
+
+            //清除長方形
+            function cleanRectangle(){
+                var canvas = document.getElementById("myCanvas");
+                if(canvas.getContext){
+                    var ctx = canvas.getContext("2d");
+                    //清除長方形
+                    ctx.clearRect(30,30,150,75);
+                }
+            }
+        </script>
+        <style>
+            canvas{
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="button" value="畫長方形" onclick="drawRectangle()"/>
+        <input type="button" value="清除長方形" onclick="cleanRectangle()"/>
+        <p></p>
+        <canvas id="myCanvas"></canvas>
+    </body>
+</html>
