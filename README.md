@@ -11,7 +11,7 @@
   * [Ch04 - 函數與物件](https://github.com/Ura777/JavaScript_Tutorial#ch04---%E5%87%BD%E6%95%B8%E8%88%87%E7%89%A9%E4%BB%B6)
   * [Ch05 - 內建物件](https://github.com/Ura777/JavaScript_Tutorial#ch05---%E5%85%A7%E5%BB%BA%E7%89%A9%E4%BB%B6)
   * [Ch06 - DOM模型](https://github.com/Ura777/JavaScript_Tutorial#ch06---dom%E6%A8%A1%E5%9E%8B)
-  * [Ch07 - Html5 API Canvas]()
+  * [Ch07 - Html5 API Canvas](https://github.com/Ura777/JavaScript_Tutorial#ch07---html5-api-canvas)
 * * *
 ## 環境設置
 * 作業系統 = Windows 7
